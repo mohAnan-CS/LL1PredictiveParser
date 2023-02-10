@@ -40,7 +40,7 @@ public class ProductionRule {
         productionRule.put(24, "inout-stmt");
         productionRule.put(25, "if-stmt");
         productionRule.put(26, "while-stmt");
-        productionRule.put(27, "compound-stmt");
+        productionRule.put(27, "compund-stmt");
         productionRule.put(28, "");
         productionRule.put(29, "name := arith-exp");
         productionRule.put(30, "term arith-exp-prime");
@@ -78,6 +78,39 @@ public class ProductionRule {
     }
 
     private static void storeNonTerminal() {
+
+        nonTerminalHashmap.put("project-declaration", 1);
+        nonTerminalHashmap.put("project-def", 2);
+        nonTerminalHashmap.put("project-heading", 3);
+        nonTerminalHashmap.put("declaration", 4);
+        nonTerminalHashmap.put("const-decl", 5);
+        nonTerminalHashmap.put("const-list", 6);
+        nonTerminalHashmap.put("var-decl", 7);
+        nonTerminalHashmap.put("var-list", 8);
+        nonTerminalHashmap.put("var-item", 9);
+        nonTerminalHashmap.put("name-list", 10);
+        nonTerminalHashmap.put("more-names", 11);
+        nonTerminalHashmap.put("subroutine-decl", 12);
+        nonTerminalHashmap.put("subroutine-heading", 13);
+        nonTerminalHashmap.put("compund-stmt", 14);
+        nonTerminalHashmap.put("stmt-list", 15);
+        nonTerminalHashmap.put("statement", 16);
+        nonTerminalHashmap.put("ass-stmt", 17);
+        nonTerminalHashmap.put("arith-exp", 18);
+        nonTerminalHashmap.put("arith-exp-prime", 19);
+        nonTerminalHashmap.put("term", 20);
+        nonTerminalHashmap.put("term-prime", 21);
+        nonTerminalHashmap.put("factor", 22);
+        nonTerminalHashmap.put("name-value", 23);
+        nonTerminalHashmap.put("add-sign", 24);
+        nonTerminalHashmap.put("mul-sign", 25);
+        nonTerminalHashmap.put("inout-stmt", 26);
+        nonTerminalHashmap.put("if-stmt", 27);
+        nonTerminalHashmap.put("else-part", 28);
+        nonTerminalHashmap.put("while-stmt", 29);
+        nonTerminalHashmap.put("bool-exp", 30);
+        nonTerminalHashmap.put("relational-oper", 31);
+        
     }
 
 
