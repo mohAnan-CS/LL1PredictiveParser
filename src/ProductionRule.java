@@ -75,6 +75,46 @@ public class ProductionRule {
     }
 
     private static void storeTerminal() {
+
+        terminalHashmap.put("project", 1);
+        terminalHashmap.put("name", 2);
+        terminalHashmap.put(";", 3);
+        terminalHashmap.put("const", 4);
+        terminalHashmap.put("const-name", 5);
+        terminalHashmap.put("=", 6);
+        terminalHashmap.put("integer-value", 7);
+        terminalHashmap.put("var", 8);
+        terminalHashmap.put(":", 9);
+        terminalHashmap.put("int", 10);
+        terminalHashmap.put("var-name", 11);
+        terminalHashmap.put(",", 12);
+        terminalHashmap.put("subroutine", 13);
+        terminalHashmap.put("begin", 14);
+        terminalHashmap.put("end", 15);
+        terminalHashmap.put(":=", 16);
+        terminalHashmap.put("(", 17);
+        terminalHashmap.put(")", 18);
+        terminalHashmap.put("+", 19);
+        terminalHashmap.put("-", 20);
+        terminalHashmap.put("*", 21);
+        terminalHashmap.put("/", 22);
+        terminalHashmap.put("scan", 23);
+        terminalHashmap.put("print", 24);
+        terminalHashmap.put("if", 25);
+        terminalHashmap.put("then", 26);
+        terminalHashmap.put("endif", 27);
+        terminalHashmap.put("else", 28);
+        terminalHashmap.put("while", 29);
+        terminalHashmap.put("do", 30);
+        terminalHashmap.put("=", 31);
+        terminalHashmap.put("|=", 32);
+        terminalHashmap.put("<", 33);
+        terminalHashmap.put("=<", 34);
+        terminalHashmap.put(">", 35);
+        terminalHashmap.put("=>", 36);
+
+
+
     }
 
     private static void storeNonTerminal() {
@@ -110,7 +150,7 @@ public class ProductionRule {
         nonTerminalHashmap.put("while-stmt", 29);
         nonTerminalHashmap.put("bool-exp", 30);
         nonTerminalHashmap.put("relational-oper", 31);
-        
+
     }
 
 
