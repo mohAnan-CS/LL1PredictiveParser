@@ -1,0 +1,57 @@
+project-def .
+project-heading declarations compound-stmt
+project name ;
+const-decl var-decl subroutine-decl
+const const-list
+lambda
+const-name = integer-value ; const-list
+lambda
+var var-list
+lambda
+var-item ; var-list
+lambda
+name-list : int
+var-name more-names
+, name-list
+lambda
+subroutine-heading declarations compound-stmt ;
+lambda
+subroutine name ;
+begin stmt-list end
+statement ; stmt-list
+lambda
+ass-stmt
+inout-stmt
+if-stmt
+while-stmt
+compound-stmt
+lambda
+name := arith-exp
+term arith-exp-prime
+add-sign term arith-exp-prime
+lambda
+factor term-prime
+mul-sign factor term-prime
+lambda
+( arith-exp )
+name-value
+name
+integer-value
++
+-
+*
+/
+%
+scan ( name )
+print ( name-value )
+if bool-exp then statement else-part endif
+else statement
+L
+while bool-exp do statement
+name-value relational-oper name-value
+=
+|=
+<
+=<
+>
+=>
